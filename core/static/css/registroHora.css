@@ -1,0 +1,75 @@
+.content-form-reservas{
+    width: 100%;
+    margin-top: -30px;
+}
+.input_rh{
+    width: 100% !important;
+    height: 45px;
+    margin-top: 10px;
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.input_rh_direccion{
+    width: 100% !important;
+    height: 45px;
+    margin-top: 10px;
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.form_in_objects{
+    margin-top: 10PX; 
+}
+.form_rh{
+margin: auto;
+width: 50%;
+}
+.sect01_reserva{
+    display: flex;
+}
+.sub1_reserva{
+    width: 50%;
+}
+.sub2_reserva{
+    width: 50%;
+    margin-left: 5%;
+}
+
+#select_rh{
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+label{
+    width: 12%;
+}
+.sect02_reserva{
+
+    width: 100%;
+    margin-top: 30px;
+}
+.sub_rh{
+    width: 100%;
+    margin-left: 53%;
+}
+.rh{
+    width: 34% !important;
+}
+.sect03_reserva{
+    width: 100%;
+    margin-top: 10px;
+}
+textarea{
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+}
+.btn_rh{
+    margin-top: 25px;
+    margin-left: 35%;
+
+}

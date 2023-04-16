@@ -1,0 +1,19 @@
+.content-form{
+    width: 40%;
+    margin: auto;
+}
+
+.form_in_objects{
+  margin-top: 10PX;  
+}
+.input_in{
+    width: 100% !important;
+    height: 45px;
+    margin-top: 10px;
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.btn_in{
+   float: r; 
+}
