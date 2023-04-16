@@ -25,15 +25,3 @@ def registro(request):
 	return render(request, 'core/Registro.html')
 
 
-
-def estilo2css(request):
-	return render(request, 'estilo2.css')
-
-def maincss(request):
-	return render(request, 'main.css')
-
-def registroHoracss(request):
-	return render(request, 'registroHora.css')
-
-def stylescss(request):
-	return render(request, 'styles.css')
