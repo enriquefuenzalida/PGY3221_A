@@ -23,5 +23,5 @@ window.addEventListener("load", (event) => {
 function cerrar(){
     var getInput = "null";
     localStorage.setItem("storageName",getInput); 
-    window.location.href='index.html';
+    window.location.href='/';
 }
