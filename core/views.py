@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import HoraToma
 
 
 # Create your views here.
@@ -19,7 +20,11 @@ def adminic(request):
 	return render(request, 'core/inicio_admin.html')
 
 def pricng(request):
-	return render(request, 'core/pricing.html')
+	horaslista = HoraToma.objects.all()
+	datos = {
+		'lashoras' : horaslista
+	}
+	return render(request, 'core/pricing.html', datos)
 
 def registro(request):
 	return render(request, 'core/Registro.html')
