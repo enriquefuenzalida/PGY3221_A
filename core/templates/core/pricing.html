@@ -28,12 +28,12 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="pricing.html">Servicios</a></li>
-                            <li class="nav-item" id="nav_registro"><a class="nav-link" href="Registro.html">Registrarse</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pricing">Servicios</a></li>
+                            <li class="nav-item" id="nav_registro"><a class="nav-link" href="Registro">Registrarse</a></li>
                             <li class="nav-item"><a class="nav-link" href="admin/"><strong>Admin</strong></a></li>
-                            <li class="nav-item nav_admin" id="nav_admin"><a class="nav-link" href="Admin.html">Panel de control</a></li>
-                            <li class="nav-item nav_user" id="nav_user"><a class="nav-link" href="Client.html">Panel usuario</a></li>
-                            <li class="nav-item" id="nav_inicio"><a class="nav-link" href="iniciarSesion.html">Iniciar sesion</a></li>
+                            <li class="nav-item nav_admin" id="nav_admin"><a class="nav-link" href="Admin">Panel de control</a></li>
+                            <li class="nav-item nav_user" id="nav_user"><a class="nav-link" href="Client">Panel usuario</a></li>
+                            <li class="nav-item" id="nav_inicio"><a class="nav-link" href="iniciarSesion">Iniciar sesion</a></li>
                             <li class="nav-item" id="nav_cerrar"><a class="nav-link" onclick="cerrar()">Cerrar sesion</a></li>
                         </ul>
                     </div>
@@ -72,11 +72,35 @@
                         </div>
                         <!-- Pricing card enterprise-->
                         <div class="col-lg-6 col-xl-4">
-                            <div class="card">
+                            <div class="card mb-5 mb-xl-0">
                                 <div class="card-body p-5">
                                     <div class="mb-3">
                                         <span class="display-4 fw-bold tituloprecios">Viviendas Particulares</span>
                                         <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie dapibus placerat. Cras a tincidunt dolor, non euismod odio. Aenean auctor dui nec bibendum euismod. Morbi faucibus sagittis lorem.</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="card">
+                                <div class="card-body p-5">
+                                    <div class="mb-3">
+                                        <span class="display-4 fw-bold tituloprecios">Próximas Exposiciones</span>
+                                        <span class="text-muted">
+                                            <dl>
+                                                <hr/>
+                                                {% for hr in lashoras %}
+                                                <dt>Fecha</dt>
+                                                <dd>{{ hr.horaDate }}</dd>
+                                                <dt>Servicio</dt>
+                                                <dd>{{ hr.horaServ }}</dd>
+                                                <hr/>
+                                                {% endfor %}
+                                            </dl>
+                                        </span>
                                     </div>
                                     
                                 </div>
