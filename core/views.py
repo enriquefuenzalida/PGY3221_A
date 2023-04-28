@@ -1,11 +1,14 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import HoraToma
-
+from .forms import HoraTomaForm
 
 # Create your views here.
 
 def home(request):
 	return render(request, 'core/index.html')
+
+def nav(request):
+	return render(request, 'core/nav.html')
 
 def admin(request):
 	return render(request, 'core/Admin.html')
@@ -29,4 +32,13 @@ def pricng(request):
 def registro(request):
 	return render(request, 'core/Registro.html')
 
-
+def form_horas(request):
+	datos = {
+		'form': HoraTomaForm()
+	}
+	if request.method == 'POST':
+		formulario = HoraTomaForm(request.POST)
+		if formulario.is_valid:
+			formulario.save()
+			datos['mensaje'] = "Guardados correctamente"
+	return render(request, 'core/form_horas.html', datos)

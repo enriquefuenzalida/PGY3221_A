@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+{% block contenido %}
+
+            <section class="bg-light py-5">
+                <div class="container px-5 my-5">
+                    <div class="text-center mb-5">
+                        <h1 class="fw-bolder">Creación de horas</h1>
+                        <p class="lead fw-normal text-muted mb-0">Registre una hora para exponer.</p>
+                    </div>
+                    <div class="row">
+                        <form mothod="POST" action="" id="formulario">
+                        {% csrf_token %}
+                            <div class="form-group">
+                                {{ form.as_table }}
+                            </div>
+
+                            <input type="submit" class="btn btn-danger" id="enviar" value="Grabar">
+                            <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
+                            <div id="error" class="alert alert-danger" rol="alert" ></div>
+                        </form>
+
+                        <div class="alert alert-success" role="alert">
+                            {{ mensaje }}
+                        </div>
+                    </div>
+                </div>
+            </section>
+ 
+{% endblock %}
